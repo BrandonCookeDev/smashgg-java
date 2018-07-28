@@ -10,8 +10,10 @@ It offers Java Object implementations of the typical constructs offered by the A
 are `Tournaments`, `Events`, `Phases`, `Phase Groups`, `Video Games`, and `Characters`. 
 
 Smash.gg organizes a construct heirarchy of the following specification:
+
 **Tournaments** -contain--> **Events** -contain--> **Phases** -contain--> **Phases Groups**
 
 Phases Groups are atomic. They contain all of the Sets in any given Tournament, even if the tournament is 
 made up of a single bracket. [Here's an example](https://smash.gg/tournament/21xx-cameron-s-birthday-bash-1/events/melee-singles/brackets/291494/618443)
 
+This library is in charge of making HTTP requests, consuming the JSON, and offering Local Object versionse of the data that is easy to use for a Java developer to pick up and play with.
